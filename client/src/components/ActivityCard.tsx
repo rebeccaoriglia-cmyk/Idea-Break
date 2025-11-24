@@ -54,7 +54,7 @@ export default function ActivityCard({ activity, onNewActivity, onShare }: Activ
         </motion.div>
         
         <motion.p 
-          className="relative mb-8 text-xl leading-relaxed text-card-foreground md:text-2xl"
+          className="relative mb-8 whitespace-pre-wrap text-xl leading-relaxed text-card-foreground md:text-2xl"
           data-testid="text-activity"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
