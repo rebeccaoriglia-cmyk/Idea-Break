@@ -59,7 +59,7 @@ export default function CategoryButton({
       data-testid={`button-category-${category}`}
       className={`
         group relative flex flex-col items-center justify-center gap-4 rounded-2xl border p-6 md:p-8
-        transition-all duration-300 hover-elevate active-elevate-2 overflow-hidden
+        transition-all duration-300 hover-elevate active-elevate-2
         ${selected 
           ? `${colorClass.border} bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800` 
           : 'border-card-border bg-card'
@@ -73,7 +73,7 @@ export default function CategoryButton({
     >
       {selected && (
         <motion.div
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 overflow-hidden rounded-2xl opacity-10"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1.5, opacity: 0.1 }}
           transition={{ duration: 0.4 }}
