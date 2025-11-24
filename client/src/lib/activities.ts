@@ -85,7 +85,7 @@ export const activities: Activity[] = [
   },
   {
     category: "teatrale",
-    text: "Scrivi un micro-dialogo tra un attore e la tua versione futura.",
+    text: "Scrivi un dialogo tra te e la tua versione futura.",
   },
   {
     category: "teatrale",
