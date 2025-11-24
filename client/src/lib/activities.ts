@@ -6,103 +6,163 @@ export interface Activity {
 export const activities: Activity[] = [
   {
     category: "creativo",
-    text: "Scrivi una storia di tre frasi iniziando con 'Era una notte buia e tempestosa...'",
+    text: "Descrivi il rumore del mare come se fossi un ingegnere che lo deve misurare.",
   },
   {
     category: "creativo",
-    text: "Inventa un nuovo colore e descrivi come ti fa sentire.",
+    text: "Scrivi tre parole che profumano di montagna.",
   },
   {
     category: "creativo",
-    text: "Crea un haiku sul tuo stato d'animo attuale.",
+    text: "Inventati un micro-oggetto meccanico che risolve un problema stupido.",
   },
   {
     category: "creativo",
-    text: "Immagina di essere un oggetto nella stanza. Racconta la tua giornata.",
+    text: "Scrivi una riga che inizi con: 'Se il mare fosse un codice…'",
   },
   {
     category: "creativo",
-    text: "Combina due parole casuali e crea una nuova invenzione.",
+    text: "Racconta un tramonto in 8 parole.",
+  },
+  {
+    category: "creativo",
+    text: "Inventa una costellazione tutta tua.",
+  },
+  {
+    category: "creativo",
+    text: "Scrivi una frase che potresti trovare in un bar marittimo.",
+  },
+  {
+    category: "creativo",
+    text: "Inventa un motto per una squadra di arrampicata immaginaria.",
   },
   {
     category: "teatrale",
-    text: "Recita il monologo di Amleto 'Essere o non essere' come se fossi un robot.",
+    text: "Scrivi la prima battuta dell'ingegnere solitario che scopre di essere in scena.",
   },
   {
     category: "teatrale",
-    text: "Improvvisa una conversazione tra te stesso e il tuo io di 10 anni fa.",
+    text: "Completa: 'Non avrei mai pensato di tornare su questo palco…'",
   },
   {
     category: "teatrale",
-    text: "Esprimi cinque emozioni diverse usando solo la tua voce, senza parole.",
+    text: "Inventa un personaggio che parla in monologhi di tre parole.",
   },
   {
     category: "teatrale",
-    text: "Fai finta di essere un presentatore TV che descrive la tua scrivania.",
+    text: "Scrivi un micro-dialogo tra un attore e la tua versione futura.",
   },
   {
     category: "teatrale",
-    text: "Crea una storia improvvisata basata sulle prime tre cose che vedi.",
+    text: "Scrivi una riga che direbbe un personaggio appena arrivato dal mare.",
   },
   {
-    category: "disegno",
-    text: "Disegna tre cerchi perfetti senza usare strumenti. Osserva come la tua mano impara dal movimento.",
+    category: "teatrale",
+    text: "Completa un monologo che inizi con: 'Io, qui, oggi…'",
   },
   {
-    category: "disegno",
-    text: "Schizza la tua mano non dominante usando la mano non dominante.",
+    category: "teatrale",
+    text: "Scrivi un momento teatrale senza usare verbi di movimento.",
   },
   {
-    category: "disegno",
-    text: "Disegna un autoritratto senza guardare il foglio.",
+    category: "teatrale",
+    text: "Scrivi l'ultima frase di uno spettacolo chiamato 'Lo Stato delle Cose'.",
   },
   {
-    category: "disegno",
-    text: "Crea un pattern ripetitivo usando solo punti e linee.",
+    category: "sketch",
+    text: "Disegna un'onda usando solo forme geometriche.",
   },
   {
-    category: "disegno",
-    text: "Disegna il suono della tua musica preferita.",
+    category: "sketch",
+    text: "Disegna una montagna come se fosse un circuito meccanico.",
   },
   {
-    category: "mentale",
-    text: "Chiudi gli occhi. Respira profondamente 5 volte contando fino a 4 in inspirazione e 6 in espirazione.",
+    category: "sketch",
+    text: "Disegna la tua stanza come scenografia teatrale.",
   },
   {
-    category: "mentale",
-    text: "Osserva 5 cose che puoi vedere, 4 che puoi toccare, 3 che puoi sentire, 2 che puoi odorare, 1 che puoi gustare.",
+    category: "sketch",
+    text: "Disegna un attrezzo che ancora non esiste.",
   },
   {
-    category: "mentale",
-    text: "Immagina un luogo in cui ti senti completamente rilassato. Descrivi tre dettagli sensoriali.",
+    category: "sketch",
+    text: "Disegna il mare senza staccare la penna.",
   },
   {
-    category: "mentale",
-    text: "Fai stretching dolce del collo e delle spalle per 2 minuti.",
+    category: "sketch",
+    text: "Disegna una creatura immaginaria che arrampica.",
   },
   {
-    category: "mentale",
-    text: "Scrivi tre cose per cui sei grato in questo momento.",
+    category: "sketch",
+    text: "Disegna un oggetto che rappresenti la concentrazione.",
   },
   {
-    category: "sorpresa",
-    text: "Inventa una danza segreta per celebrare piccole vittorie quotidiane.",
+    category: "sketch",
+    text: "Disegna la tua giornata come fosse un grafico tecnico.",
   },
   {
-    category: "sorpresa",
-    text: "Se potessi avere una conversazione di 5 minuti con qualsiasi oggetto, quale sceglieresti e perché?",
+    category: "voce",
+    text: "Scrivi una cosa che oggi ti ha fatto sentire vivo.",
   },
   {
-    category: "sorpresa",
-    text: "Crea un superore il cui potere è completamente inutile ma divertente.",
+    category: "voce",
+    text: "Completa: 'Sarebbe più facile se…'",
   },
   {
-    category: "sorpresa",
-    text: "Scrivi una recensione entusiasta di un oggetto noioso sulla tua scrivania.",
+    category: "voce",
+    text: "Scrivi un pensiero che butteresti fuori scena.",
   },
   {
-    category: "sorpresa",
-    text: "Immagina che i tuoi capelli abbiano una personalità. Descrivila.",
+    category: "voce",
+    text: "Scrivi un desiderio per le prossime 2 ore.",
+  },
+  {
+    category: "voce",
+    text: "La cosa più semplice che puoi fare ora per respirare meglio.",
+  },
+  {
+    category: "voce",
+    text: "Descrivi un posto in cui ti sentiresti tranquillo adesso.",
+  },
+  {
+    category: "voce",
+    text: "Scrivi una frase che ti direbbe un vecchio amico saggio.",
+  },
+  {
+    category: "voce",
+    text: "Completa: 'In questo momento, il mio ritmo è…'",
+  },
+  {
+    category: "stanza",
+    text: "Inventa un personaggio + un oggetto + un luogo e scrivi una riga di scena.",
+  },
+  {
+    category: "stanza",
+    text: "Disegna un ricordo del mare che non hai mai vissuto.",
+  },
+  {
+    category: "stanza",
+    text: "Scrivi un biglietto trovato in una giacca.",
+  },
+  {
+    category: "stanza",
+    text: "Disegna una macchina assurda che risolve un problema quotidiano.",
+  },
+  {
+    category: "stanza",
+    text: "Scrivi un micro-pensiero usando solo parole di una sillaba.",
+  },
+  {
+    category: "stanza",
+    text: "Descrivi il tuo mouse come fosse un prop di teatro.",
+  },
+  {
+    category: "stanza",
+    text: "Scrivi una frase che potresti leggere in cima a una montagna.",
+  },
+  {
+    category: "stanza",
+    text: "Disegna una cosa che ti manca, ma senza dire cos'è.",
   },
 ];
 

@@ -1,0 +1,117 @@
+const prompts = {
+  creativo: [
+    "Descrivi il rumore del mare come se fossi un ingegnere che lo deve misurare.",
+    "Scrivi tre parole che profumano di montagna.",
+    "Inventati un micro-oggetto meccanico che risolve un problema stupido.",
+    "Scrivi una riga che inizi con: 'Se il mare fosse un codice…'",
+    "Racconta un tramonto in 8 parole.",
+    "Inventa una costellazione tutta tua.",
+    "Scrivi una frase che potresti trovare in un bar marittimo.",
+    "Inventa un motto per una squadra di arrampicata immaginaria."
+  ],
+
+  teatrale: [
+    "Scrivi la prima battuta dell’ingegnere solitario che scopre di essere in scena.",
+    "Completa: 'Non avrei mai pensato di tornare su questo palco…'",
+    "Inventa un personaggio che parla in monologhi di tre parole.",
+    "Scrivi un micro-dialogo tra un attore e la tua versione futura.",
+    "Scrivi una riga che direbbe un personaggio appena arrivato dal mare.",
+    "Completa un monologo che inizi con: 'Io, qui, oggi…'",
+    "Scrivi un momento teatrale senza usare verbi di movimento.",
+    "Scrivi l’ultima frase di uno spettacolo chiamato 'Lo Stato delle Cose'."
+  ],
+
+  disegno: [
+    "Disegna un’onda usando solo forme geometriche.",
+    "Disegna una montagna come se fosse un circuito meccanico.",
+    "Disegna la tua stanza come scenografia teatrale.",
+    "Disegna un attrezzo che ancora non esiste.",
+    "Disegna il mare senza staccare la penna.",
+    "Disegna una creatura immaginaria che arrampica.",
+    "Disegna un oggetto che rappresenti la concentrazione.",
+    "Disegna la tua giornata come fosse un grafico tecnico."
+  ],
+
+  mentale: [
+    "Scrivi una cosa che oggi ti ha fatto sentire vivo.",
+    "Completa: 'Sarebbe più facile se…'",
+    "Scrivi un pensiero che butteresti fuori scena.",
+    "Scrivi un desiderio per le prossime 2 ore.",
+    "La cosa più semplice che puoi fare ora per respirare meglio.",
+    "Descrivi un posto in cui ti sentiresti tranquillo adesso.",
+    "Scrivi una frase che ti direbbe un vecchio amico saggio.",
+    "Completa: 'In questo momento, il mio ritmo è…'"
+  ],
+
+  sorpresa: [
+    "Inventa un personaggio + un oggetto + un luogo e scrivi una riga di scena.",
+    "Disegna un ricordo del mare che non hai mai vissuto.",
+    "Scrivi un biglietto trovato in una giacca.",
+    "Disegna una macchina assurda che risolve un problema quotidiano.",
+    "Scrivi un micro-pensiero usando solo parole di una sillaba.",
+    "Descrivi il tuo mouse come fosse un prop di teatro.",
+    "Scrivi una frase che potresti leggere in cima a una montagna.",
+    "Disegna una cosa che ti manca, ma senza dire cos’è."
+  ],
+
+  scena: ["__SCENA_RAPIDA__"] // placeholder
+};
+
+// Nuovi array per la scena rapida
+const personaggi = [
+  "uno stanco ma determinato",
+  "una mente troppo logica",
+  "un ingegnere che non vuole più ingegnerizzare",
+  "un tipo appena tornato dal mare",
+  "una persona che parla poco ma pensa tanto",
+  "un arrampicatore indeciso"
+];
+
+const luoghi = [
+  "una fermata dell’autobus vuota",
+  "un sentiero di montagna al mattino",
+  "un garage pieno di attrezzi",
+  "una stanza illuminata solo dal PC",
+  "una spiaggia fuori stagione",
+  "una piazzetta di un paesino"
+];
+
+const oggetti = [
+  "un elastico",
+  "una tazza mezza piena",
+  "un bullone",
+  "una conchiglia",
+  "un foglio spiegazzato",
+  "un vecchio biglietto"
+];
+
+const output = document.getElementById("output");
+
+// Event listener dei pulsanti
+document.querySelectorAll("button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.dataset.category;
+
+    // --- Se è la SCENA RAPIDA ---
+    if (category === "scena") {
+      const p = personaggi[Math.floor(Math.random() * personaggi.length)];
+      const l = luoghi[Math.floor(Math.random() * luoghi.length)];
+      const o = oggetti[Math.floor(Math.random() * oggetti.length)];
+
+      const scenaPrompt =
+        `Personaggio: ${p}\nLuogo: ${l}\nOggetto: ${o}\n\n` +
+        "Scrivi una micro-scena (max 1 riga) usando questi tre elementi.";
+
+      output.textContent = scenaPrompt;
+      output.classList.add("visible");
+      return;
+    }
+
+    // --- Altrimenti categorie normali ---
+    const list = prompts[category];
+    const randomPrompt = list[Math.floor(Math.random() * list.length)];
+
+    output.textContent = randomPrompt;
+    output.classList.add("visible");
+  });
+});
