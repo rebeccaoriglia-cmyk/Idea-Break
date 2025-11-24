@@ -10,9 +10,9 @@ import { useToast } from "@/hooks/use-toast";
 const categories = [
   { id: "creativo", title: "Creativo", icon: Sparkles, color: "purple" },
   { id: "teatrale", title: "Teatrale", icon: Users, color: "pink" },
-  { id: "disegno", title: "Disegno", icon: Pencil, color: "cyan" },
-  { id: "mentale", title: "Reset Mentale", icon: RotateCcw, color: "orange" },
-  { id: "sorpresa", title: "Sorpresa", icon: Gift, color: "emerald" },
+  { id: "sketch", title: "Sketch Generator", icon: Pencil, color: "cyan" },
+  { id: "voce", title: "Voce Interiore", icon: RotateCcw, color: "orange" },
+  { id: "stanza", title: "La Stanza Segreta", icon: Gift, color: "emerald" },
 ];
 
 const floatingShapes = [
