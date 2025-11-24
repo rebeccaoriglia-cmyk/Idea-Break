@@ -39,7 +39,7 @@ export default function Header() {
             />
           </svg>
           <h1 className="text-2xl font-semibold tracking-tight text-foreground">
-            Creative Break
+            Idea Break
           </h1>
         </div>
         

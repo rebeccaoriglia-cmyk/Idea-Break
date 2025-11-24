@@ -13,6 +13,7 @@ export default function CategoryButtonExample() {
         category="creativo"
         onClick={() => setSelected(!selected)}
         selected={selected}
+        color="purple"
       />
       <CategoryButton
         icon={Sparkles}
@@ -20,6 +21,7 @@ export default function CategoryButtonExample() {
         category="other"
         onClick={() => console.log('clicked')}
         selected={false}
+        color="pink"
       />
     </div>
   );
