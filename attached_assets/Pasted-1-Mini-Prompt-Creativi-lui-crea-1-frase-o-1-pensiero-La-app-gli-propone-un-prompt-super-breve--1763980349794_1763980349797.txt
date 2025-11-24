@@ -1,0 +1,82 @@
+1) “Mini Prompt Creativi” (lui crea 1 frase o 1 pensiero)
+
+La app gli propone un prompt super breve e lui deve scrivere una micro cosa (5–10 secondi).
+
+Esempi:
+
+“Scrivi una frase che potrebbe dire un personaggio che hai inventato ora.”
+
+“Scrivi tre parole che ti vengono in mente se chiudi gli occhi.”
+
+“Scrivi la battuta più breve possibile che faccia ridere te stesso.”
+
+“Scrivi una cosa che oggi ti ha fatto respirare un po’ meglio.”
+
+Il cervello cambia modalità all’istante → e lui produce qualcosa di suo.
+
+La tua app può anche mostrare le frasi che scrive, creando un mini-diario creativo (che è bellissimo).
+
+2) “Costruisci una scena in 10 secondi”
+
+La app gli dà tre elementi casuali → lui deve pensare una micro-scena e scriverla in due righe.
+
+Es:
+
+Personaggio: “uno stanco ma determinato”
+
+Luogo: “una fermata dell’autobus vuota”
+
+Oggetto: “un elastico”
+
+Prompt: Scrivi una micro-scena (massimo 1 riga) usando questi tre elementi.
+
+È teatrale, creativo, super leggero.
+
+3) “Sketch Generator”
+
+Break creativo non teatrale, ma artistico:
+gli dai una cosa piccolissima da disegnare in 20–30 secondi.
+
+Esempi:
+
+“Disegna un oggetto della tua stanza… come se fosse un logo minimal.”
+
+“Ridisegna velocemente un animale come se fosse un robot.”
+
+“Disegna il mare… senza onde.”
+
+Lui lavora in ingegneria → questo è perfetto perché unisce creatività + schematizzazione.
+
+Puoi far apparire un semplice timer da 20 secondi.
+
+4) “Voce Interiore: versione teatrale”
+
+Gli dai un prompt di scrittura che fa proprio da reset mentale:
+
+“Scrivi una riga di diario… come se stessi parlando a un pubblico invisibile.”
+
+“Scrivi una frase sul tuo umore… come se fosse un monologo.”
+
+“Scrivi una cosa che dirai a te stesso tra un’ora.”
+
+È terapeutico e creativo insieme.
+
+5) “La Stanza Segreta”
+
+La app ha una modalità segreta (da attivare con un toggle) che dà:
+
+micro-monologhi da completare
+
+frasi da continuare
+
+situazioni da chiudere
+
+Tipo:
+
+“Completa: Oggi ho capito che…”
+
+“Completa: Il problema è che nessuno ti dice mai che…”
+
+“Scrivi l’ultima frase di un monologo che non esiste.”
+
+È un gioco mentale bellissimo e molto attoriale.
