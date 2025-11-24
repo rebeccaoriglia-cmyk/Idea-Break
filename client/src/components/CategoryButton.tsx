@@ -58,7 +58,8 @@ export default function CategoryButton({
       onClick={onClick}
       data-testid={`button-category-${category}`}
       className={`
-        group relative flex flex-col items-center justify-center gap-4 rounded-2xl border p-6 md:p-8
+        group relative flex flex-col items-center justify-center gap-3 rounded-2xl border
+        w-full aspect-square
         transition-all duration-300 hover-elevate active-elevate-2
         ${selected 
           ? `${colorClass.border} bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800` 
@@ -85,7 +86,7 @@ export default function CategoryButton({
       
       <motion.div 
         className={`
-          rounded-full p-3 transition-all duration-300
+          rounded-full p-2.5 transition-all duration-300
           ${selected 
             ? `${colorClass.bg} text-white shadow-lg` 
             : `bg-muted text-muted-foreground ${colorClass.hoverBg}`
@@ -94,12 +95,12 @@ export default function CategoryButton({
         whileHover={{ rotate: [0, -5, 5, -5, 0], scale: 1.1 }}
         transition={{ duration: 0.5 }}
       >
-        <Icon className="h-8 w-8" strokeWidth={1.5} />
+        <Icon className="h-6 w-6 md:h-7 md:w-7" strokeWidth={1.5} />
       </motion.div>
       
       <motion.span 
         className={`
-          text-center text-base font-medium tracking-button transition-colors
+          text-center text-xs md:text-sm font-medium tracking-button transition-colors px-2 leading-tight
           ${selected ? colorClass.text : 'text-foreground'}
         `}
         animate={selected ? { scale: [1, 1.05, 1] } : {}}
