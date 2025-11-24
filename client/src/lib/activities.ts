@@ -3,6 +3,41 @@ export interface Activity {
   category: string;
 }
 
+const personaggi = [
+  "uno stanco ma determinato",
+  "una persona che ha appena scoperto una verità",
+  "qualcuno che vuole dire qualcosa ma non trova il coraggio",
+  "un ottimista incallito",
+  "un tipo sarcastico che non crede a niente"
+];
+
+const luoghi = [
+  "una fermata dell'autobus vuota",
+  "una stanza illuminata solo da una candela",
+  "la cima di una montagna",
+  "la riva del mare al tramonto",
+  "un corridoio troppo silenzioso"
+];
+
+const oggetti = [
+  "un elastico",
+  "un vecchio biglietto stropicciato",
+  "una conchiglia",
+  "una matita consumata",
+  "una chiave senza serratura"
+];
+
+function generaElemento(lista: string[]): string {
+  return lista[Math.floor(Math.random() * lista.length)];
+}
+
+function generaScena(): string {
+  const p = generaElemento(personaggi);
+  const l = generaElemento(luoghi);
+  const o = generaElemento(oggetti);
+  return `Personaggio: ${p}\nLuogo: ${l}\nOggetto: ${o}\n\nScrivi una micro-scena usando tutti e tre gli elementi.`;
+}
+
 export const activities: Activity[] = [
   {
     category: "creativo",
@@ -132,41 +167,15 @@ export const activities: Activity[] = [
     category: "voce",
     text: "Completa: 'In questo momento, il mio ritmo è…'",
   },
-  {
-    category: "stanza",
-    text: "Inventa un personaggio + un oggetto + un luogo e scrivi una riga di scena.",
-  },
-  {
-    category: "stanza",
-    text: "Disegna un ricordo del mare che non hai mai vissuto.",
-  },
-  {
-    category: "stanza",
-    text: "Scrivi un biglietto trovato in una giacca.",
-  },
-  {
-    category: "stanza",
-    text: "Disegna una macchina assurda che risolve un problema quotidiano.",
-  },
-  {
-    category: "stanza",
-    text: "Scrivi un micro-pensiero usando solo parole di una sillaba.",
-  },
-  {
-    category: "stanza",
-    text: "Descrivi il tuo mouse come fosse un prop di teatro.",
-  },
-  {
-    category: "stanza",
-    text: "Scrivi una frase che potresti leggere in cima a una montagna.",
-  },
-  {
-    category: "stanza",
-    text: "Disegna una cosa che ti manca, ma senza dire cos'è.",
-  },
 ];
 
 export function getRandomActivity(category: string): Activity {
+  if (category === "stanza") {
+    return {
+      category: "stanza",
+      text: generaScena()
+    };
+  }
   const categoryActivities = activities.filter(a => a.category === category);
   return categoryActivities[Math.floor(Math.random() * categoryActivities.length)];
 }
