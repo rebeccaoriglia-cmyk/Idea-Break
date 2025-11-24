@@ -44,7 +44,7 @@ function generaScena(): string {
   const p = generaElemento(personaggi);
   const l = generaElemento(luoghi);
   const o = generaElemento(oggetti);
-  return `personaggio:\n${p}\n\nluogo:\n${l}\n\noggetto:\n${o}\n\nScrivi una micro-scena usando tutti e tre gli elementi.`;
+  return `personaggio:\n${p}\n\n\nluogo:\n${l}\n\n\noggetto:\n${o}\n\n\nScrivi una micro-scena usando tutti e tre gli elementi.`;
 }
 
 export const activities: Activity[] = [
